@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Features from "./Features";
 import OurMission from "./OurMission";
 import useMediaQuery from "../../Hooks/useMediaQuery";
+import RouteExplorer from "./RouteExplorer";
 
 const DEBUG = false; // set to true to show the progress badge
 
@@ -12,6 +13,7 @@ const SLIDES = [
   { id: "home", Component: Hero, bg: "bg-safeher-forest" },
   { id: "features", Component: Features, bg: "bg-safeher-ivory" },
   { id: "about", Component: OurMission, bg: "bg-white" },
+  { id: "explore", Component: RouteExplorer, bg: "bg-safeher-ivory" },
 ];
 
 const STORY_QUERY = "(min-width: 1024px)";
