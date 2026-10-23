@@ -1,5 +1,6 @@
 
 import { ArrowUpRight, Navigation } from "lucide-react";
+import safeherlogo from "../../assets/safeherlogo.png";
 
 const CTA = {
   label: "Explore Routes",
@@ -23,8 +24,8 @@ function Navbar({ brandName = "SafeHer", cta = CTA }) {
   className={`flex items-center gap-3 rounded-lg ${focusRing}`}
 >
   <img
-    src="/src/assets/image.png"
-    alt=""
+    src={safeherlogo}
+    alt="safe-her logo"
     className="h-12 w-12 rounded-full object-cover ring-2 ring-[#C9F27A] shadow-md"
   />
 
