@@ -1,5 +1,6 @@
 import Navbar from "./components/layout/Navbar";
- import Features from "./components/sections/Features";
+import Features from "./components/sections/Features";
+import Hero from "./components/sections/Hero";
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <Navbar />
       <main id="home">
         {/* Hero and other sections will go here */}
-
+<Hero />
 <Features />
       </main>
     </>
