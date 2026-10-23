@@ -1,18 +1,14 @@
-import Navbar from "./components/layout/Navbar";
-import Features from "./components/sections/Features";
-import Hero from "./components/sections/Hero";
 
+import Layout from "./components/Layouts/layout";
+import Hero from "./components/sections/Hero";
+import Features from "./components/sections/Features";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <main id="home">
-        {/* Hero and other sections will go here */}
-<Hero />
-<Features />
-      </main>
-    </>
+    <Layout>
+      <Hero />
+      <Features />
+    </Layout>
   );
 }
 
