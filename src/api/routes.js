@@ -5,6 +5,7 @@ export async function findRoutes(
   origin,
   destination,
   transportMode = "driving"
+  
 ) {
   if (!API_BASE_URL) {
     throw new Error("Backend URL is not configured.");
@@ -28,3 +29,5 @@ export async function findRoutes(
 
   return response.json();
 }
+
+
