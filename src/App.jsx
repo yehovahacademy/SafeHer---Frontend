@@ -1,13 +1,11 @@
 
 import Layout from "./components/Layouts/layout";
-import Hero from "./components/sections/Hero";
-import Features from "./components/sections/Features";
+import HorizontalStory from "./components/sections/HorizontalStory";
 
 function App() {
   return (
     <Layout>
-      <Hero />
-      <Features />
+      <HorizontalStory />
     </Layout>
   );
 }

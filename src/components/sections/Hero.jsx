@@ -56,7 +56,7 @@ function HeroCopy({
         </span>
       </div>
 
-      <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
+      <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight sm:text-6xl">
         {title}
         {highlight && (
           <>
@@ -102,12 +102,12 @@ function HeroCopy({
 
 function RouteIllustration() {
   return (
-    <div className="relative mt-7 flex min-h-64 items-center justify-center overflow-hidden rounded-2xl bg-[#1a493d] p-5">
+    <div className="relative mt-7 flex min-h-64 items-center justify-center overflow-hidden rounded-2xl bg-[#1a493d] p-5 lg:min-h-0">
       <svg
         viewBox="0 0 320 240"
         role="img"
         aria-label="Illustration of a route connecting two points"
-        className="w-full max-w-sm text-safeher-lime"
+        className="w-full max-w-sm text-safeher-lime lg:max-w-xs"
         fill="none"
       >
         <path
@@ -204,16 +204,13 @@ function Hero({
   const initial = shouldReduceMotion ? false : "hidden";
 
   return (
-    <section
-      id="home"
-      className="relative overflow-hidden bg-safeher-forest text-safeher-ivory"
-    >
+    <section className="relative overflow-hidden bg-safeher-forest text-safeher-ivory lg:h-full">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-safeher-lime/10 blur-3xl"
       />
 
-      <div className="relative mx-auto grid min-h-[85vh] max-w-7xl items-center gap-14 px-6 py-20 md:grid-cols-2 md:px-12 lg:px-16 lg:py-24">
+      <div className="relative mx-auto grid min-h-[85vh] max-w-7xl items-center gap-14 px-6 py-20 md:grid-cols-2 md:px-12 lg:h-full lg:min-h-0 lg:px-16 lg:py-8">
         <HeroCopy
           eyebrow={eyebrow}
           title={title}
