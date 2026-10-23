@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 
 import FeaturePanel from "./FeaturePanel";
-import { featurePanels } from "../../data/featurePanels";
+import { featurePanels } from "../Data/featurePanels";
 
 const pad = (number) => String(number).padStart(2, "0");
 
