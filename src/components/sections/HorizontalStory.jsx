@@ -4,7 +4,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from "motion/react"
 import Hero from "./Hero";
 import Features from "./Features";
 import OurMission from "./OurMission";
-import useMediaQuery from "../../hooks/useMediaQuery";
+import useMediaQuery from "../../Hooks/useMediaQuery";
 
 const DEBUG = false; // set to true to show the progress badge
 
