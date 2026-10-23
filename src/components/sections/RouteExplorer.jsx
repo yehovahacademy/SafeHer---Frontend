@@ -362,14 +362,23 @@ function RouteExplorer() {
     setResult(null);
 
     try {
-      const data = await findRoutes(origin.trim(), destination.trim(), transportMode);
-      setResult(data);
-    } catch (err) {
-      setError(err.message || "Unable to fetch routes. Please try again.");
-    } finally {
-      setLoading(false);
-    }
+    console.log("3. Calling backend...");
+
+    const data = await findRoutes(
+      origin.trim(),
+      destination.trim(),
+      transportMode
+    );
+
+    console.log("4. Backend response:", data);
+    setResult(data);
+  } catch (err) {
+    console.error("SafeHer route error:", err);
+    setError(err.message || "Unable to fetch routes. Please try again.");
+  } finally {
+    setLoading(false);
   }
+}
 
   return (
     <section
